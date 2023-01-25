@@ -1,0 +1,103 @@
+{% extends 'main.html' %} 
+{% load custom_filters %} <!-- не забываем заранее загружать наши фильтры! --> 
+
+{% block title %}
+News
+{% endblock title %}
+
+
+{% block content %}
+
+    <!-- Перед таблицей добавим форму для поиска -->
+    <form method="GET">
+        {{ filter.form }} <!-- Форму от фильтров за нас сделает Django. А вот кнопку, увы придётся делать самому -->
+        <input type="submit" value="Найти">
+    </form>
+
+    <h1> Всего новостей: {{ news|length }} </h1>
+    {% if is_subs != None %}
+        {% if pk_cat != None %}
+            {% for cat in cats  %}
+                <p>
+                {% if cat not in is_subs %}
+                    {% for category in categories  %}
+                        {% if category.0 == cat %}
+                            <button> <a href="{% url 'subscribe' cat %}"> Подписаться на рассылку категории - {{ category.1 }}</a> </button>
+                        {% endif %}
+                    {% endfor %} 
+                {% else %}
+                    {% for category in categories  %}
+                        {% if category.0 == cat %}
+                            <button> <a href="{% url 'unsubscribe' cat %}"> Отписаться от рассылки категории - {{ category.1 }}</a> </button>
+                            {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </p>
+            {% endfor %}
+        {% endif %}
+    {% endif %}
+    <hr>
+    {% if news %}
+        <table>
+            <thead>
+                <th>
+                    Заголовок
+                </th>
+                <th>
+                    Дата
+                </th>
+                <th>
+                    Текст
+                </th>
+                <th>
+                    Категория
+                </th>
+            </thead>
+            {% for article in filter.qs %}
+                <tr>
+                    <td>
+                        {{ article.title|censor }}
+                    </td>
+                    <td>
+                        {{ article.created|date:'M d Y' }}
+                    </td>
+                    <td>
+                        {{ article.text|truncatechars:50|censor }}
+                    </td>
+                    <td>
+                        {% for cat in article.cats.values %}
+                            {{ cat.name }}
+                        {% endfor %}
+                    </td>  
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <h2>Новости отсутствуют!</h2>
+    {% endif %}
+{% endblock content %}
+
+
+
+        <!-- <select name="author" size="1">
+            {% for aut in authors %}
+                <option value="{{ aut.id }}">
+                    {{ aut }}
+                </option>
+            {% endfor %}
+        </select>
+
+        <label for="title">Заголовок</label>
+        <input name="title" type="text">
+     
+        <label for="text">Текст</label>
+        <input name="text" type="text">
+        
+        Здесь будет список категорий.
+        <select name="cats" multiple="multiple" size="4">
+            {% for category in categories %}
+                <option value="{{ category.id }}">
+                    {{ category }}
+                </option>
+            {% endfor %}
+        </select>  -->

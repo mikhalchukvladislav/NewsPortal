@@ -1,0 +1,87 @@
+{% load i18n %}
+{% load tz %} <!-- не забываем загрузить тег для работы с часовыми поясами -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <!-- {% load cache %} -->
+    <!-- {% cache 30 head %} -->
+        {% block head %}
+            <head>
+                
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                <meta name="description" content="" />
+                <meta name="author" content="" />
+                <title>{% trans "News Portal" %}</title>
+                 
+                {% load static %}
+                 <!-- Core theme CSS (includes Bootstrap)-->
+                 <link href="{% static 'css/styles.css' %}" rel="stylesheet" /> 
+
+                <!-- {% if current_time.hour >= 19 or current_time.hour <= 7  %}
+                    <style> body {background-color:#e6ebef;} </style>
+                {% else %}
+                    <style> body {background-color:#8ebf42;} </style>
+                {% endif %}  -->
+
+                <style>
+                    body {background-color: {% if current_time.hour >= 19 or current_time.hour <= 7 %} darkcyan {% else %} powderblue {% endif %};}
+                </style>
+                
+            </head>
+        {% endblock head %}
+    <!-- {% endcache %} -->
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+           <div class="container">
+               <a class="navbar-brand" href="/">{% trans "News Portal" %}</a>
+               <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"  
+                       data-target="#navbarResponsive"
+                       aria-controls="navbarResponsive" aria-expanded="false"
+                       aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button> -->
+               <div class="collapse navbar-collapse" id="navbarResponsive">
+                   <ul class="navbar-nav ml-auto">
+                       <li class="nav-item">
+                           <a class="nav-link" href="/search/">{% trans "Search of news" %}</a>
+                        </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="/protect/">{% trans "Profile" %}</a>
+                       </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <!-- Page content-->
+        <form action="{% url 'set_language' %}" method="POST"> {% csrf_token %} <!-- Не забываем по csrf_token для POST запросов -->
+            <input type="hidden" name="next" value="{{ redirect_to }}">
+            
+            <select name="language" id="">
+                {% get_available_languages as LANGUAGES %} <!-- получаем языки -->
+                {% get_language_info_list for LANGUAGES as languages %} <!-- Помещаем их в список languages -->
+
+                {% for language in languages %} <!-- Итерируясь по списку, выводим их название на языке пользователя и код -->
+                    <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>
+                        {{ language.name_local }} - {{ language.code }}
+                    </option>
+                {% endfor %}
+            </select>
+            
+            <input type="submit" value="set">
+        </form>
+ 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    {% block content %}
+                    {{ flatpage.content }}
+                    {% endblock content %}
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+ 
+{% block title %} 
+Post 
+{% endblock title %}
+ 
+{% block content %}
+<h3>Информация о новости</h3>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.author }}
+    {{ form.title }}
+    {{ form.text }}
+    {{ form.cats }}
+    <!-- <label for="cats">Категория</label><br>
+    <select multiple size="4" id='cats' name="cats">
+        <option>
+        {% for cat in form.cats %}
+            {% if cat in post.cats %}
+                {{ cat }}
+            {% endif %}
+        {% endfor %}
+        </option>
+    </select> -->
+    <input type="submit" value="Обновить новость">
+</form>
+{% endblock content %}

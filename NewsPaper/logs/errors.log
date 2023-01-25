@@ -1,0 +1,1663 @@
+2023-01-08 14:16:50,224 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 10: 'get_current_timezone', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x000001F56726D7C0>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'get_current_timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 10: 'get_current_timezone', expected 'endblock'. Did you forget to register or load this tag?
+2023-01-08 14:16:50,227 ERROR    "GET / HTTP/1.1" 500 222855 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-08 14:17:05,931 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 10: 'get_current_timezone', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x000001F56711F740>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'get_current_timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 10: 'get_current_timezone', expected 'endblock'. Did you forget to register or load this tag?
+2023-01-08 14:17:05,932 ERROR    "GET / HTTP/1.1" 500 222697 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-08 15:32:54,159 ERROR    Internal Server Error: /search/ C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: '&' from '&'"), <traceback object at 0x0000018D92966E80>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '&'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 886, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 889, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '&' from '&'
+2023-01-08 15:32:54,164 ERROR    "GET /search/ HTTP/1.1" 500 289880 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 18:46:45,834 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: '&&' from '&&'"), <traceback object at 0x000002181036CD40>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '&&'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 886, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 889, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '&&' from '&&'
+2023-01-10 18:46:45,841 ERROR    "GET / HTTP/1.1" 500 321495 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 18:51:18,457 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: '(current_time.hour' from '(current_time.hour'"), <traceback object at 0x0000021810223100>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '(current_time.hour'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 886, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 889, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(current_time.hour' from '(current_time.hour'
+2023-01-10 18:51:18,459 ERROR    "GET / HTTP/1.1" 500 321495 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 18:53:02,598 ERROR    Internal Server Error: /search/ C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: '=' from '='"), <traceback object at 0x0000021810296C40>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '='
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 886, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 889, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '=' from '='
+2023-01-10 18:53:02,600 ERROR    "GET /search/ HTTP/1.1" 500 289653 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 18:58:50,248 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 30: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?"), <traceback object at 0x000002181140AE00>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 30: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2023-01-10 18:58:50,250 ERROR    "GET / HTTP/1.1" 500 304034 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 18:59:33,805 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: '=1' from '1=1'"), <traceback object at 0x0000021811485380>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '1=1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 886, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 889, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '=1' from '1=1'
+2023-01-10 18:59:33,807 ERROR    "GET / HTTP/1.1" 500 343956 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 18:59:43,385 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: '==1' from '1==1'"), <traceback object at 0x0000021811425780>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '1==1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 886, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 889, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '==1' from '1==1'
+2023-01-10 18:59:43,387 ERROR    "GET / HTTP/1.1" 500 343986 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 18:59:44,263 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: '==1' from '1==1'"), <traceback object at 0x0000021811466C40>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '1==1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 886, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 889, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '==1' from '1==1'
+2023-01-10 18:59:44,266 ERROR    "GET / HTTP/1.1" 500 343986 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 18:59:44,754 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: '==1' from '1==1'"), <traceback object at 0x0000021811454A40>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '1==1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 886, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 889, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '==1' from '1==1'
+2023-01-10 18:59:44,757 ERROR    "GET / HTTP/1.1" 500 343986 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 18:59:46,625 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: '==1' from '1==1'"), <traceback object at 0x000002181140DEC0>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '1==1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 886, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 889, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '==1' from '1==1'
+2023-01-10 18:59:46,627 ERROR    "GET / HTTP/1.1" 500 343986 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 19:00:12,600 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 30: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?"), <traceback object at 0x000002180F16A780>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 30: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2023-01-10 19:00:12,601 ERROR    "GET / HTTP/1.1" 500 304028 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 19:00:14,110 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 30: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?"), <traceback object at 0x000002181012E1C0>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 30: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2023-01-10 19:00:14,111 ERROR    "GET / HTTP/1.1" 500 304028 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 19:00:14,301 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 30: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?"), <traceback object at 0x00000218114574C0>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 30: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2023-01-10 19:00:14,302 ERROR    "GET / HTTP/1.1" 500 304028 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-10 19:00:56,934 ERROR    Internal Server Error: / C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 30: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?"), <traceback object at 0x000002181027AA40>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\templatetags\cache.py", line 84, in do_cache
+    nodelist = parser.parse(("endcache",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 30: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2023-01-10 19:00:56,936 ERROR    "GET / HTTP/1.1" 500 303855 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-16 05:22:36,891 ERROR    Internal Server Error: /vladnews/ C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.'), <traceback object at 0x00000268E07C8F00>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'author-detail' not found. 'author-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2023-01-16 05:22:36,902 ERROR    "GET /vladnews/ HTTP/1.1" 500 167201 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-16 05:22:44,004 ERROR    Internal Server Error: /vladnews/ C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.'), <traceback object at 0x00000268DF605740>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'author-detail' not found. 'author-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2023-01-16 05:22:44,007 ERROR    "GET /vladnews/ HTTP/1.1" 500 167201 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-16 05:24:18,436 ERROR    Internal Server Error: /vladnews/1/ C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.'), <traceback object at 0x00000268DF5F58C0>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'author-detail' not found. 'author-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\renderers.py", line 694, in get_context
+    'put_form': self.get_rendered_html_form(data, view, 'PUT', request),
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\renderers.py", line 510, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\renderers.py", line 517, in render_form_for_serializer
+    return form_renderer.render(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\renderers.py", line 371, in render
+    return template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\library.py", line 239, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\templatetags\rest_framework.py", line 87, in render_field
+    return renderer.render_field(field, style)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\renderers.py", line 350, in render_field
+    return template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 189, in render
+    values = self.sequence.resolve(context, ignore_failures=True)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 909, in _resolve_lookup
+    current = current()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 220, in iter_options
+    self.get_choices(cutoff=self.html_cutoff),
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 202, in get_choices
+    return OrderedDict([
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 204, in <listcomp>
+    self.to_representation(item),
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2023-01-16 05:24:18,451 ERROR    "GET /vladnews/1/ HTTP/1.1" 500 284063 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-16 05:24:42,148 ERROR    Internal Server Error: /vladnews/a/ C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.'), <traceback object at 0x00000268E0765500>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'author-detail' not found. 'author-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\renderers.py", line 723, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\renderers.py", line 694, in get_context
+    'put_form': self.get_rendered_html_form(data, view, 'PUT', request),
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\renderers.py", line 510, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\renderers.py", line 517, in render_form_for_serializer
+    return form_renderer.render(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\renderers.py", line 371, in render
+    return template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\library.py", line 239, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\templatetags\rest_framework.py", line 87, in render_field
+    return renderer.render_field(field, style)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\renderers.py", line 350, in render_field
+    return template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\defaulttags.py", line 189, in render
+    values = self.sequence.resolve(context, ignore_failures=True)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\template\base.py", line 909, in _resolve_lookup
+    current = current()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 220, in iter_options
+    self.get_choices(cutoff=self.html_cutoff),
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 202, in get_choices
+    return OrderedDict([
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 204, in <listcomp>
+    self.to_representation(item),
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2023-01-16 05:24:42,159 ERROR    "GET /vladnews/a/ HTTP/1.1" 500 284063 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-16 05:24:48,610 ERROR    Internal Server Error: /vladnews/ C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.'), <traceback object at 0x00000268E07F94C0>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'author-detail' not found. 'author-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super().data
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 686, in to_representation
+    return [
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2023-01-16 05:24:48,615 ERROR    "GET /vladnews/ HTTP/1.1" 500 167201 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-16 05:28:27,190 ERROR    Internal Server Error: /vladnews/2/ C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.'), <traceback object at 0x00000268DF4FD980>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'author-detail' not found. 'author-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "author-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2023-01-16 05:28:27,193 ERROR    "GET /vladnews/2/ HTTP/1.1" 500 151732 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-16 06:01:59,151 ERROR    Internal Server Error: /vladnews/2/ C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('Could not resolve URL for hyperlinked relationship using view name "category-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.'), <traceback object at 0x000001FD522D2E00>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 401, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 339, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 47, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\reverse.py", line 60, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\urls\resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'category-detail' not found. 'category-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 565, in to_representation
+    return [
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 566, in <listcomp>
+    self.child_relation.to_representation(value)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\relations.py", line 416, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "category-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2023-01-16 06:01:59,160 ERROR    "GET /vladnews/2/ HTTP/1.1" 500 160620 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-16 06:02:26,547 ERROR    Internal Server Error: /vladnews/2/ C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'django.core.exceptions.ImproperlyConfigured'>, ImproperlyConfigured('Field name `cats_name` is not valid for model `Post`.'), <traceback object at 0x000001D0A4976C40>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 507, in to_representation
+    for field in fields:
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `cats_name` is not valid for model `Post`.
+2023-01-16 06:02:26,553 ERROR    "GET /vladnews/2/ HTTP/1.1" 500 146897 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None
+2023-01-17 19:46:20,077 ERROR    Internal Server Error: /news/news_id=2/ C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\utils\log.py (<class 'TypeError'>, TypeError("'Meta.fields' must not contain non-model field names: news_id"), <traceback object at 0x0000022452D14680>)
+Traceback (most recent call last):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\generics.py", line 83, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\rest_framework\generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django_filters\rest_framework\backends.py", line 90, in filter_queryset
+    filterset = self.get_filterset(request, queryset, view)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django_filters\rest_framework\backends.py", line 31, in get_filterset
+    filterset_class = self.get_filterset_class(view, queryset)
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django_filters\rest_framework\backends.py", line 73, in get_filterset_class
+    class AutoFilterSet(self.filterset_base):
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django_filters\filterset.py", line 71, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django_filters\filterset.py", line 358, in get_filters
+    raise TypeError(
+TypeError: 'Meta.fields' must not contain non-model field names: news_id
+2023-01-17 19:46:20,081 ERROR    "GET /news/news_id%3D2/ HTTP/1.1" 500 135480 C:\Users\Vladislav\Desktop\Диск\Мои доки\Личное\PYTHON\SkillFactory\newspaper\venv\lib\site-packages\django\core\servers\basehttp.py None

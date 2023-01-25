@@ -1,0 +1,42 @@
+{% extends 'main.html' %} 
+{% load custom_filters %} <!-- не забываем заранее загружать наши фильтры! --> 
+
+{% block title %}
+Post
+{% endblock title %}
+
+
+{% block content %}
+<h1> Новость - {{ post.id }} </h1>
+<hr>
+    <table>
+        <tr>
+            <td>
+                Заголовок
+            </td>
+            <td>
+                Дата
+            </td>
+            <td>
+                Текст
+            </td>
+            <td>
+                Автор
+            </td>
+        </tr>
+        <tr>
+            <td>
+                {{ post.title|censor }}
+            </td>
+            <td>
+                {{ post.created|date:'d-M-Y H:m' }}
+            </td>
+            <td>
+                {{ post.text|censor }}
+            </td>
+            <td>
+                {{ post.author }}
+            </td>  
+        </tr>
+    </table>
+{% endblock content %}

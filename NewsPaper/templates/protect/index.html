@@ -1,0 +1,20 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h2>Страница авторизованного пользователя {{request.user.username}}</h2>
+
+{% if subs %}
+    <h3> Ваши подписки: </h3>
+    {% for sub in subs %}
+        <p><button> <a href="{% url 'unsubscribe' sub.0 %}"> Отписаться от рассылки категории - {{ sub.1 }}</a> </button></p>
+    {% endfor %}
+{% else %}
+    <h3> У Вас нет подписок на новости, можете это исправить по <a href="/search"> ссылке. </a> </h3>
+{% endif %}
+
+{% if is_not_author %}
+<button> <a href="/sign/upgrade/"> Стать автором</a> </button>
+{% endif %}
+
+<button> <a href="/accounts/logout/">Выйти</a> </button>
+{% endblock %}
